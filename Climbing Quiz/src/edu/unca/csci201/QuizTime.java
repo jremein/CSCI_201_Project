@@ -31,7 +31,7 @@ public class QuizTime {
 		quizQuestions[8] = new TrueFalseQuestion("When you see clumps of moss and vegetation while climbing "
 				+ "it's ok to pull it off the cliff and watch it smash on the ground below you, it's so entertaining! "
 				+ "(T/F)\n", "F");
-		quizQuestions[9] = new TrueFalseQuestion("Climbing is a great way to get rid of a fear or heights. (T/F)\n", "T");
+		quizQuestions[9] = new TrueFalseQuestion("Climbing is a great way to get rid of a fear of heights. (T/F)\n", "T");
 		quizQuestions[10] = new TrueFalseQuestion("While inherently dangerous, a competent climber can mitigate most, but not all, "
 				+ "of the risks associated with spending time in the mountains. (T/F)\n", "T");
 		quizQuestions[11] = new TrueFalseQuestion("If you come across a peregrin falcon nest while climbing, it's best"
@@ -89,17 +89,19 @@ public class QuizTime {
 		
 		
 		NumberFormat pgrade = NumberFormat.getPercentInstance();
-		double Tolerance = 0.000001;
+		double Tolerance = 0.01;
 		Scanner scan = new Scanner(System.in);
 		
-		if(Math.abs(100.0 - grade) < Tolerance) {													// If got 100%...
-			System.out.println("Holy Cow! You made a " + pgrade.format(grade) + " on the quiz."
+		if(Math.abs(1.0 - grade) < Tolerance) {					// If got 100% congratulate quiz taker
+			System.out.println("Holy Cow! You made a"
+					+ " " + pgrade.format(grade) + " on the quiz."
 					+ " Great Job!!!");
 		}
 		
 		
-		else {																							// Otherwise prompt user to initiate print questions with correct answers
-			System.out.println("You're Done! You scored a " + pgrade.format(grade) + " on the quiz."
+		else {													// Otherwise prompt user to initiate print questions with correct answers
+			System.out.println("You're Done! You scored a"
+					+ " " + pgrade.format(grade) + " on the quiz."
 					+ " Press Enter to see which one's you missed");
 		
 			scan.nextLine();
