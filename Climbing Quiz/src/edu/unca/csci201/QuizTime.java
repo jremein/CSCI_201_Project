@@ -55,7 +55,7 @@ public class QuizTime {
 				+ "established the hardest rock route in the world? (answer a, b, etc.) \n a. Adam Ondra"
 				+ "\n b. Chris Sharma \n c. Tommy Caldwell \n d. Alex Megos \n", "a");
 		quizQuestions[17] = new MultipleChoiceQuestion("Who was the first climber to ascend the face of El "
-				+ "Capital in Yosemite National Park? (answer a, b, etc.) \n a. Royal Robbins \n b. Alex Honnold"
+				+ "Capitan in Yosemite National Park? (answer a, b, etc.) \n a. Royal Robbins \n b. Alex Honnold"
 				+ "\n c. Warren Harding \n d. Who Cares!!?? \n", "c");
 		quizQuestions[18] = new MultipleChoiceQuestion("What is a term used specifically by climbers that can describe both a rock "
 				+ "feature and the weather conditions? (answer a, b, etc.) \n a. Gnarly \n b. Rad \n c. Tubular \n"
